@@ -1,0 +1,58 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 6rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-dark) 100%);
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 3rem 1rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.buttonSpacing {
+  margin-left: 0;
+}
+
+.installCommand {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.installCommand code {
+  color: var(--ifm-color-white);
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+@media screen and (max-width: 996px) {
+  .installCommand {
+    padding: 0.75rem 1.5rem;
+  }
+  
+  .installCommand code {
+    font-size: 0.9rem;
+  }
+}
