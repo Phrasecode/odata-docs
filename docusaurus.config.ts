@@ -89,13 +89,13 @@ const config: Config = {
         },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://www.npmjs.com/package/@phrasecode/odata',
-          label: 'NPM Package',
+          to: '/contact-us',
+          label: 'Contact Us',
           position: 'left',
         },
         {
-          to: '/contact-us',
-          label: 'Contact Us',
+          href: 'https://www.npmjs.com/package/@phrasecode/odata',
+          label: 'NPM Package',
           position: 'left',
         }
       ],
