@@ -57,7 +57,7 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         Control access with <code>ODataControler</code> allowing you to specify 
-        which HTTP methods are permitted (GET, POST, PATCH, DELETE) per model.
+        which HTTP methods are permitted (GET) per model.
       </>
     ),
   },

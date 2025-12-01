@@ -396,4 +396,3 @@ If you encounter an error not covered here:
 1. Enable debug logging to get more details
 2. Check the generated SQL query
 3. Verify your model definitions match database schema
-4. Check the [FAQ](../13-faq.md) for additional guidance

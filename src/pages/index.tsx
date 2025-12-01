@@ -26,7 +26,7 @@ function HomepageHeader() {
           </Link>
           <Link
             className={clsx('button button--outline button--secondary button--lg', styles.buttonSpacing)}
-            to="/docs/getting-started/getting-started">
+            to="/docs/quick-start">
             Quick Start Guide
           </Link>
         </div>
