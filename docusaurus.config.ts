@@ -1,13 +1,13 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
+import { themes as prismThemes } from "prism-react-renderer";
+import type { Config } from "@docusaurus/types";
+import type * as Preset from "@docusaurus/preset-classic";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: '@phrasecode/odata',
-  tagline: 'Modern OData v4 Server Library for Node.js',
-  favicon: 'img/favicon.ico',
+  title: "@phrasecode/odata",
+  tagline: "Modern OData v4 Server Library for Node.js",
+  favicon: "img/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -15,54 +15,52 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://odata.phrasecode.com',
+  url: "https://odata.phrasecode.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Phrasecode', // Usually your GitHub org/user name.
-  projectName: 'OData', // Usually your repo name.
+  organizationName: "Phrasecode", // Usually your GitHub org/user name.
+  projectName: "OData", // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: "throw",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       {
         docs: {
-          sidebarPath: './sidebars.ts',
+          sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/Phrasecode/odata/tree/main/website/',
+          editUrl: "https://github.com/Phrasecode/odata/tree/main/website/",
         },
         blog: {
           showReadingTime: true,
           feedOptions: {
-            type: ['rss', 'atom'],
+            type: ["rss", "atom"],
             xslt: true,
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/Phrasecode/odata/tree/main/website/',
+          editUrl: "https://github.com/Phrasecode/odata/tree/main/website/",
           // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
+          onInlineTags: "warn",
+          onInlineAuthors: "warn",
+          onUntruncatedBlogPosts: "warn",
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       } satisfies Preset.Options,
     ],
@@ -70,38 +68,38 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/logo.jpg',
+    image: "img/logo.jpg",
     colorMode: {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Home',
+      title: "Home",
       logo: {
-        alt: 'Phrasecode OData Logo',
-        src: 'img/logo.png',
+        alt: "Phrasecode OData Logo",
+        src: "img/logo.png",
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
+          type: "docSidebar",
+          sidebarId: "tutorialSidebar",
+          position: "left",
+          label: "Tutorial",
         },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
-          to: '/contact-us',
-          label: 'Contact Us',
-          position: 'left',
+          to: "/contact-us",
+          label: "Contact Us",
+          position: "left",
         },
         {
-          href: 'https://www.npmjs.com/package/@phrasecode/odata',
-          label: 'NPM Package',
-          position: 'left',
-        }
+          href: "https://www.npmjs.com/package/@phrasecode/odata",
+          label: "NPM Package",
+          position: "left",
+        },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       // links: [
       //   {
       //     title: 'Docs',
@@ -149,6 +147,15 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
+    plugins: [
+      [
+        "@docusaurus/plugin-google-gtag",
+        {
+          trackingID: "G-G8TGFBWVQB",
+          anonymizeIP: true,
+        },
+      ],
+    ],
   } satisfies Preset.ThemeConfig,
 };
 
