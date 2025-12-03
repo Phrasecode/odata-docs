@@ -62,6 +62,10 @@ const config: Config = {
         theme: {
           customCss: "./src/css/custom.css",
         },
+        gtag:{
+          trackingID: "G-G8TGFBWVQB",
+          anonymizeIP: true,
+        }
       } satisfies Preset.Options,
     ],
   ],
@@ -146,16 +150,7 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
-    },
-    plugins: [
-      [
-        "@docusaurus/plugin-google-analytics",
-        {
-          trackingID: "G-G8TGFBWVQB",
-          anonymizeIP: true,
-        },
-      ],
-    ],
+    }
   } satisfies Preset.ThemeConfig,
 };
 
